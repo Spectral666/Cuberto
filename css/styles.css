@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+    /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img{
+    border-radius: 10px;
+}
+
+a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 8px 0px;
+}
+
+.center{
+    text-align: center;
+}
+
+/* SECCIONES */
+
+#section-1,
+#section-2,
+#section-3{
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#section-1{
+    background: #f5eef5;
+}
+
+#section-2{
+    background: #faf5f3;
+}
+
+#section-3{
+    background: #f2f9f8;
+}
+
+#section-4{
+    background: #000;
+    color: #fff;
+}
+
+/* COLUMNAS */
+.column-1{
+    width: 100%;
+}
+
+.column-2{
+    width: 50%;
+    float: left;
+}
+
+.column-3{
+    width: 25%;
+    padding: 80px;
+    float: left;
+}
+
+/* HEADER */
+
+header{
+    padding: 80px;
+}
+
+header .column-1 p{
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+header .column-1 h1{
+    font-size: 5.5vw;
+    color: rgb(79, 177, 131);
+    margin: 0px;
+}
+
+.column-2 h2{
+    font-size: 2.5vw;
+    font-weight: 300;
+}
+
+.column-2 h3{
+    font-size: 3vw;
+    font-weight: 300;
+    color: rgb(122, 122, 122);
+}
+
+.column-2 p{
+    font-size: 1.5vw;
+}
+
+.column-2 img{
+    width: 30vw;
+}
+
+#section-4 .column-1{
+    padding: 80px 80px 0px 80px;
+}
+
+.column-1 h3{
+    margin: 0;
+}
+
+@media screen and (max-width: 500px){
+    #section-1,
+    #section-2,
+    #section-3{
+        padding: 25px;
+    }
+    header{
+        padding: 25px;
+    }
+    header .column-1 h1{
+        font-size: 10vw;
+    }
+    header .column-1 p{
+        font-size: 4vw;
+    }
+    .column-2{
+        width: 100%;
+    }
+    .column-2 h2{
+        font-size: 5vw;
+    }
+    .column-2 h3{
+        font-size: 6vw;
+    }
+    .column-2 p{
+        font-size: 4vw;
+    }
+    .column-2 img{
+        width: 90vw;
+    }
+
+    .column-3{
+        width: 50%;
+        padding: 60px 25px;
+    }
+    #section-4 .column-1{
+        padding: 80px 25px 0px 25px;
+    }
+}
